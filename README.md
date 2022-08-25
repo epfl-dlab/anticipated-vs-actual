@@ -1,6 +1,6 @@
 ### Code anda data for: Anticipated versus Actual Effects of Platform Design Change: A Case Study of Twitter's Character Limit
 
-#### Repository structure
+### Repository structure
 
 ------------
 
@@ -32,12 +32,14 @@
     └──
 ------------
 
-####  System requirements and installation guide
+###  System requirements and installation guide
 
 We recommend a local installation of new Python virtual environment. The code was tested on Ubuntu 18.04.
 Please use the packages versions provided in requirements.txt
 
-1. Open the terminal. To avoid any incompatibility issue,
+1. To obtain the raw data, go to our [Zenodo repository](https://zenodo.org/record/7009935), download 40 batch files and place them under `data/batches`.
+
+2. Open the terminal. To avoid any incompatibility issue,
  please create a new virtual environment. This project was created using [virtualenvwrapper](]https://virtualenvwrapper.readthedocs.io/en/latest/)
 
 `pip install virtualenvwrapper` <br>
@@ -49,9 +51,11 @@ The environment should be activated automatically, if not use: <br>
 To deactivate the environment simply use: <br>
 `deactivate`
 
-2. Start a Jupyter notebook server if you want to reproduce the plots. <br>
+3. Start a Jupyter notebook server if you want to reproduce the plots. <br>
 `cd notebooks` <br>
 `jupyter notebook`
+
+4. To regenerate the intermediate .csv files you can do it using scripts from `src`.
 
 
 ### Cite us
